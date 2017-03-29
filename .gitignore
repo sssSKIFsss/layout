@@ -1,0 +1,7 @@
+.idea/
+bower_lib/
+build/
+node_modules/
+tmp/
+login.txt
+tags

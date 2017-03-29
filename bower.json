@@ -1,0 +1,38 @@
+{
+  "name": "layout",
+  "description": "my front-end project",
+  "main": "gulpfile.js",
+  "authors": [
+    "IF"
+  ],
+  "license": "MIT",
+  "homepage": "https://xxIFxx@bitbucket.org/xxIFxx/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    ".idea",
+    "node_modules",
+    "bower_components",
+    "tmp",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  },
+  "devDependencies": {
+    "fancybox": "^2.1.6",
+    "html5shiv": "^3.7.3",
+    "kbw-countdown": "^2.1.0",
+    "owl-carousel": "^1.3.2",
+    "respond": "~1.4.2",
+    "jquery-waypoints": "^4.0.1",
+    "jquery.scrollTo": "^1.4.14",
+    "jQuery.mmenu": "^5.7.8",
+    "superfish": "^1.7.9",
+    "font-roboto": "^0.0.2",
+    "font-awesome": "^4.7.0",
+    "webfont-opensans": "^0.0.2",
+    "Headhesive.js": "headhesive#^1.2.4"
+  }
+}

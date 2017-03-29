@@ -1,0 +1,269 @@
+/* =======================================================
+*
+* Template Style
+* top-navbar.scss
+*
+* ======================================================= */
+
+@import "../../../../style/abstracts/variables";
+
+.if-top-navbar {
+	line-height: 8.4rem;
+	color: $color-white;
+	&__logo {
+		font-family: 'Segoe Script Bold', Arial, sans-serif;
+		font-size: 4.4rem;
+		color: $color-beige;
+		&:hover {
+			text-decoration: none;
+			color: $color-dark-beige;
+		}
+		img { margin-right: 2.8rem; }
+	}
+	&__menu-button {
+		line-height: 8.4rem;
+		color: $color-beige;
+		background: transparent;
+		border: medium none;
+		font-size: 2.8rem;
+		float: right;
+		outline: none;
+		&:hover {
+			cursor: pointer;
+			color: $color-light_blue;
+			transition: all 0.3s ease;
+		}
+	}
+	&__search-button {
+		float: right;
+		color: $color-light_blue;
+		&:hover {
+			color: $color-dark_beige;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+		.fa {
+			font-size: 3rem;
+			margin: 2.5rem 0 0 3rem;
+		}
+	}
+	&__menu {
+		float: right;
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			text-transform: uppercase;
+			.active a {
+				color: $color-dark_beige;
+			}
+			li {
+				line-height: 1rem;
+				display: inline-block;
+				position: relative;
+				padding-right: 1.7rem;
+				&:hover > ul {
+					display: block !important;
+				}
+				a {
+					color: $color-light_blue;
+					display: block;
+					transition: all 0.3s ease;
+					font-size: 1.4rem;
+					&:hover {
+						color: $color-dark_beige;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		.submenu {
+			display: none !important;
+			position: absolute;
+			top: 100%;
+			width: 200px;
+			background: $color-blue;
+			z-index: 15;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), 0 5px 0 rgba(255, 255, 255, 0.15);
+			li {
+				width: 200px;
+				padding: 10px;
+				border-bottom: 1px solid $color-dark-blue;
+				a {
+					font-size: 1.2rem;
+				}
+			}
+		}
+		// форма поиска в мобильной версии меню
+		.search-mobile {
+			padding: 10px;
+			.search {
+				width: 100%;
+				position: relative;
+				input {
+					border: none;
+					outline: none;
+				}
+				.input {
+					width: 100%;
+					padding: 8px 37px 9px 15px;
+					-moz-box-sizing: border-box;
+					box-sizing: border-box;
+					box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 1px 2px rgba(0,0,0,0.3);
+					background: $color-beige;
+					font-size: 1.1rem;
+					color: $color-dark_beige;
+					outline: none;
+					&:focus {
+						box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4);
+						background: $color-white;
+						color: $color-dark_blue;
+					}
+				}
+				input[type="search"] {
+					-webkit-appearance: none;
+				}
+				.submit {
+					position: absolute;
+					top: 13px;
+					right: -12px;
+					width: 37px;
+					height: 100%;
+					cursor: pointer;
+					background: url(../../../../img/go.png) no-repeat;
+					opacity: 0.5;
+					&:hover {
+						opacity: 0.8;
+					}
+				}
+			}
+		}
+	}
+}
+
+// липкое меню
+.headhesive {
+	position: fixed;
+	transform: translateY(-140%);
+	width: 100%;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	//noinspection CssUnknownProperty
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	z-index: 15;
+	top: 15px;
+	.if-top-navbar {
+		line-height: 4rem;
+		&__logo {
+			font-size: 3rem;
+			&:hover {
+				text-decoration: none;
+				color: $color-dark_beige;
+			}
+			img { display: none;; }
+		}
+		&__menu-button {
+			line-height: 4rem;
+		}
+		&__search-button {
+			.fa {
+				font-size: 2rem;
+				margin: 0.9rem 0 0 0;
+			}
+		}
+		&__menu {
+			.search-mobile {
+				.submit {
+					top: 13px;
+				}
+			}
+		}
+	}
+	&--stick {
+		transform: translateY(0%);
+		top: 0;
+	}
+}
+
+// медиа-запросы нужно перенести в media.scss
+/*==========  Desktop First Method  ==========*/
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 768px) {
+	.hidden-md-down {
+		display: none;
+	}
+	.if-top-navbar__search-button {
+		display: none;
+	}
+	.if-top-navbar__menu {
+		background: $color-blue;
+		ul {
+			display: none;
+			margin-top: 10px;
+			li {
+				position: relative;
+				width: 100%;
+				float: right;
+				padding: 0;
+				display: block;
+				a {
+					border-bottom: 1px solid $color-light_blue;
+					padding: 10px 20px;
+					color: $color-beige;
+					&:hover {
+						color: $color-dark_beige;
+					}
+				}
+			}
+		}
+		.submenu {
+			position: relative;
+			float: right;
+			width: 100%;
+			display: block !important;
+			box-shadow: none;
+			background: none;
+			margin: 0;
+			padding: 0 0 0 30px;
+			li {
+				width: 100%;
+				border: 0;
+				padding: 0;
+			}
+		}
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.hidden-sm-down {
+		display: none;
+	}
+	// отключаем липкое меню на мобильниках
+	.headhesive--stick {
+		display: none;
+	}
+	.if-top-navbar {
+		&__logo img {
+			display: none;
+		}
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 768px) {
+	.hidden-md-up {
+		display: none !important;
+	}
+	.if-top-navbar__menu ul {
+		display: block !important;
+	}
+}

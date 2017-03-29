@@ -1,0 +1,52 @@
+/* =======================================================
+*
+* Template Style
+* main.scss
+*
+* ======================================================= */
+
+@import "../../../style/abstracts/mixins";
+@import "../../../style/abstracts/variables";
+
+.if-main {
+	width: 100%;
+	padding: 2.4rem;
+	background: $color-white;
+	-webkit-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.35);
+	box-shadow: 2px 2px 5px 0 rgba( 0, 0, 0, 0.35 );
+	@include border-radius($border-radius);
+}
+.if-post {
+	display: inline-block;
+	&__title {
+		text-decoration: none;
+		&:hover {
+			text-decoration: none;
+		}
+		h2 {
+			font-weight: 400;
+			margin: 1rem 0 0.5rem 0;
+		}
+	}
+	&__meta {
+		margin: 0;
+		padding: 0 0 1rem 0;
+		font-size: 1.1rem;
+		li {
+			display: inline-block;
+			padding: 0 0.9rem 0 0;
+		}
+	}
+	img {
+		height: auto; /* Make sure images are scaled correctly. */
+		max-width: 100%; /* Adhere to container width. */
+		vertical-align: middle;
+	}
+	&-more {
+		font-size: 1.4rem;
+		display: inline-block;
+		float: right;
+	}
+
+}

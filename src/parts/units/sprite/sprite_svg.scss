@@ -1,0 +1,36 @@
+// Закоментированный код формируется автоматически
+
+//.icon-books, .icon-coffee, .icon-vk, .icon-youtube {
+//	background: url("../img/sprite.svg") no-repeat; }
+//
+//.icon-books {
+//	background-position: 0 0;
+//	width: 64px;
+//	height: 52px; }
+//.icon-coffee {
+//	background-position: 0 8.074534161490684%;
+//	width: 42px;
+//	height: 42px; }
+//.icon-vk {
+//	background-position: 0 88.855421686747%;
+//	width: 26px;
+//	height: 22px; }
+//.icon-youtube {
+//	background-position: 0 100%;
+//	width: 26px;
+//	height: 22px; }
+
+// изменяем цвет при наведении
+.fh5co-block {
+	&:hover, &:focus {
+		.icon-direction {background-position: 0 22.25705329153605%;}
+		.icon-parents {background-position: 0 59.09090909090909%;}
+		.icon-square {background-position: 0 78.36990595611286%;}
+} }
+
+// Изменяем размер
+#fh5co-counters {
+	.icon-parents {
+		height: 40px;
+		background-size: 55px auto;
+} }

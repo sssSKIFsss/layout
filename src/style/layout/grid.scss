@@ -1,0 +1,66 @@
+/* =======================================================
+*
+* Template Style
+* grid.scss
+*
+* ======================================================= */
+
+@import "../../style/abstracts/variables";
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+
+html, body {
+	height: 100%; // для прижатия футера к низу
+}
+
+body {
+	box-sizing: border-box;
+	background: $color-beige;
+}
+
+// для прижатия футера к низу
+.if-wrapper {
+	display: flex;
+	min-height: 100%;
+	flex-direction: column;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+
+blockquote,
+q {
+	quotes: "" "";
+}
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+figure {
+	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
+}
+

@@ -1,0 +1,51 @@
+1.	Делаем копию шаблона project_create_staeps
+	Переименовываем под проект
+2.	Настраиваем библиотеку внешних модулей и шрифтов 
+	через файл bower.json. 
+	Закачиваем библиотеку командой bower install. 
+	Изменяем структуру bower_lib к след. виду:
+	
+	bower_lib
+	|--fonts
+	|  |--font_1
+	|  |  |--css
+	|  |  |  +--файл font_1.css
+	|  |  +--font
+	|  |     +--все файлы шрифта
+	|  |--......
+	|  +--font_n
+	|     |--css
+	|     |  +--файл font_n.css
+	|     +--font
+	|        +--все файлы шрифта
+    |  
+	|--modul_1
+	|  |--css
+	|  |  +--файл modul_1.css
+	|  +--js
+	|  |  +--все файлы js
+	|  +--img
+	|     +--файлы картинок
+	|--......
+	+--modul_n
+	   |--css
+	   |  +--файл modul_n.css
+	   +--js
+	   |  +--все файлы js
+	   +--img
+	      +--файлы картинок
+
+	Вручную исправляем сылки в файлах css и js
+3.	Настраиваем git.
+	Идем на bitbucket.org, регистрируем репозиторий 'project'
+	и соединяем его с IDE командами в командной строке из директории проекта:
+	git remote add origin https://xxIFxx@bitbucket.org/xxIFxx/project.git
+	git push -u origin master (возможен error)
+	В IDE :
+	В меню VCS -> Enable Version Control Integrator выбираем Git
+	Выбираем в установках IDE файлы и папки, не подлежашие коммиту
+	Далее git add . -> Ctrl+Alt+A
+	git commit -m "commit"    | -> Ctrl+K
+	git push -u origin master |
+	Если Сtrl+K, то убираем две галочки справа и в Commit -> Commit and Push
+	-> В Push Commits слева ставим галочку Push Tags(All) -> Push

@@ -1,0 +1,33 @@
+/* =======================================================
+*
+* Template Style
+* header.scss
+*
+* ======================================================= */
+
+@import "../../../style/abstracts/variables";
+
+.if-header {
+	color: $color-white;
+	&-top {
+		background-color: $color-dark_blue;
+		padding:6px 0;
+		font-size: 1.2rem;
+		text-align: right;
+		a {
+			color: $color-white;
+			&:hover {
+				color: $color-light_blue;
+				text-decoration: none;
+			}
+		}
+		.if-phone, .if-mail {
+			display: inline-block;
+			margin-left:5px;
+			i { margin-right: 5px; }
+		}
+	}
+	&-main {
+		background-color: $color-blue;
+	}
+}

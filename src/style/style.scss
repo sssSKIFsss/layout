@@ -1,0 +1,49 @@
+/* =======================================================
+*
+* Template Style
+* style.scss
+*
+* ======================================================= */
+
+// VENDORS -------------------------------------------------------------------
+
+	@import "../../bower_lib/bootstrap/css/bootstrap.css";
+	@import "../../bower_lib/fancybox/css/jquery.fancybox.css";
+	@import "../../bower_lib/owl-carousel/css/owl.carousel.css";
+	@import "../../bower_lib/kbw-countdown/css/jquery.countdown.css";
+
+// MODULES AND PARTIALS ------------------------------------------------------
+
+	// сброс настроек
+	@import "base/reset";
+
+	// объявление переменных и функций должно быть вверху
+	@import "abstracts/variables";
+	@import "abstracts/mixins";
+	@import "abstracts/functions";
+
+	// добавляем описание спрайта, не красивое решение
+	// тоже должно быть вверху
+	@import "../../tmp/style/sprite";
+
+	// общие стили
+	@import "base/typography";
+	@import "layout/grid";
+	@import "layout/media";
+
+	// стили блоков
+	@import "../parts/layout/header/header";
+		@import "../parts/units/button/awesome_social/btn";
+		@import "../parts/units/navbar/top/top-navbar";
+		@import "../parts/units/popup/search_form/popup_searcher";
+	@import "../parts/layout/main/main";
+		@import "../parts/units/pagination/simple/pg";
+
+	@import "../parts/layout/sidebar/sidebar";
+	@import "../parts/layout/footer/footer";
+		@import "../parts/units/button/go_top/btn";
+
+.if-container {
+	margin: 2.4rem 0;
+	flex: 1; // для прижатия футера к низу
+}

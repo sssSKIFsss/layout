@@ -1,0 +1,41 @@
+<!-----------------------------------------------------------
+*
+* Template HTML
+* nav.html
+* липкий навбар с логотипом, многоуровневым меню, кнопкой поиска
+*----------------------------------------------------------->
+
+<nav class="if-top-navbar">
+	<!-- логотип -->
+	<a class="if-top-navbar__logo" href="#">
+		<img src="../../../../img/logo.png" alt="Logo">С нуля
+	</a>
+	<!-- кнопка мобильного меню -->
+	<div class="if-top-navbar__menu-button hidden-md-up"><i class="fa fa-bars"></i></div>
+	<!-- кнопка поиска -->
+	<div class="if-top-navbar__search-button"><i class="fa fa-search"></i></div>
+	<!-- меню -->
+	<div class="if-top-navbar__menu">
+		<ul>
+			<li class="search-mobile hidden-md-up">
+				<form action="" method="post" class="search">
+					<input type="search" name="" placeholder="поиск" class="input" />
+					<input type="submit" name="" value="" class="submit" />
+				</form>
+			</li>
+			<li class="active"><a href="#">Главная</a></li>
+			<li><a href="">О нас</a></li>
+			<li>
+				<a href="">Услуги</a>
+				<ul class="submenu">
+					<li><a href="#">Фрирайд</a></li>
+					<li><a href="#">Бэккантри</a></li>
+					<li><a href="#">Джиптуры</a></li>
+					<li><a href="#">Тренинг</a></li>
+				</ul>
+			</li>
+			<li><a href="">Контакты</a></li>
+		</ul>
+	</div>
+</nav> <!-- end Планка бренд-меню -->
+

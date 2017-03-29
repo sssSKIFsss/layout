@@ -1,0 +1,10 @@
+{
+  "../../style/style.scss": "css/style.css",
+
+  "../../../js/": "js/",
+  "../../js/": "js/",
+
+  "../../../img/": "img/",
+
+  "../../../photos/": "photos/"
+}

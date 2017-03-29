@@ -1,0 +1,14 @@
+/* =======================================================
+*
+* Template Style
+* media.scss
+*
+* ======================================================= */
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+

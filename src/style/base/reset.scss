@@ -1,0 +1,24 @@
+/* =======================================================
+*
+* Template Style
+* reset.scss
+*
+* ======================================================= */
+/*
+ * Обнуляем все стили чтобы уравнять браузеры
+ */
+
+// normalize.css включенв bootstrpap.css, поэтому закоммитин
+// @import "/bower_components/normalize.css/normalize.css";
+
+@import "../../style/abstracts/variables";
+
+// links
+a { color: $color-link; }
+a:visited { color: $color-visited-link; }
+a:hover,
+a:focus,
+a:active { color: $color-hover-link; }
+a:focus { outline: thin dotted; }
+a:hover,
+a:active { outline: 0; }

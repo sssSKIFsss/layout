@@ -1,0 +1,35 @@
+// jpg - sptrites1
+.icon {
+	float: left;
+	margin-right: 20px;
+	@include border-radius(50%);
+	background: url(../../../img/sprite.jpg);
+	width: 100px;
+	height: 100px;
+	&.icon1 { background-position: 0 0; }
+	&.icon2 { background-position: 0 200px; }
+	&.icon3 { background-position: 0 100px; }
+}
+
+// jpg - sptrites2
+.block {
+	border: 2px solid lighten($brand-black, 95%);
+	padding: 80px 30px 30px 30px;
+	float: left;
+	width: 100%;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		border: 2px solid lighten($brand-black, 95%);
+		@include border-radius(50%);
+		width: 100px;
+		height: 100px;
+		background: url(../../../img/sprite.jpg);
+		top: -50px;
+		margin-left: -50px;
+	}
+	&.icon1:before { background-position: 0 300px; }
+	&.icon2:before { background-position: 0 400px; }
+	&.icon3:before { background-position: 0 500px; }
+}

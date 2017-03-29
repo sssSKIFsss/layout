@@ -1,0 +1,54 @@
+/* =======================================================
+*
+* Template Style
+* btn-go_top.scss
+*
+* ======================================================= */
+
+@import "../../../../style/abstracts/variables";
+$btn-color: $color-blue;
+$arrow-color: $color-dark_blue;
+$arrow-width: 20px;
+
+
+.arrow {
+	position: fixed;
+	right: 25px;
+	bottom: 25px;
+	width: 40px;
+	height: 40px;
+	opacity: 0.5;
+	background: $btn-color;
+	z-index: 8;
+	font-size: 30px;
+	padding-top: 5px;
+	text-align: center;
+	vertical-align: middle;
+	@include border-radius(50%);
+	@include transition(.3s);
+	&_up {
+		width: 0;
+		height: 0;
+		float: left;
+		border: solid transparent;
+		border-top-color: $arrow-color;
+		border-width: $arrow-width;
+		transform: rotate(180deg) translate(- $arrow-width, 15px);
+		&:before {
+			content:'';
+			display: inline-block;
+			border: solid transparent;
+			border-top-color: $btn-color;
+			border-width: $arrow-width;
+			transform: translate(- $arrow-width, -30px);
+		}
+	}
+	&:hover, &:focus {
+		top: -25px;
+		text-decoration: none!important;
+		.gotop__arrow_up {
+			border-top-color: $color-dark_beige;
+		}
+	}
+}
+

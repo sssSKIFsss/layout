@@ -1,0 +1,48 @@
+	// system
+	"jquery": "3.*",
+	"bootstrap": "^3.3.7",
+
+	// base
+	"normalize.css": "*", // обнуляем установки браузеров
+	"respond": "^1.4.2",  // что бы IE понимал @media - отзывчивый дизайн
+	"html5shiv: "^0.1",  // поддержка старыми IE6,7,8 елементов html5
+	/* Modernizr is a small piece of JavaScript code that automatically
+	*  detects the availability of next-generation web technologies in
+	*  your user's browsers.
+	*  позволяет выбрать конфигурацию на https://modernizr.com и требует
+	*  программирования случаев, когда браузер не поддерживает что-либо
+	*/
+	"modernizr": "^3.3.1",
+
+	// fonts
+	"font-awesome: "^4.2.0",
+	"font-source-sans-pro": "font-source-sans-pro-sass#^2.10.0"
+
+	// вывод чисел
+	"jquery.countdown": "^0.1", // таймер обратного отсчёта времени
+	"jquery-countTo": "^1.2.0", // таймер прямого отсчёта времени
+
+	// scrolling
+	"jquery-waypoints": "^4.0.1", // подключает ф-цию при любом скроллинге вроде
+	"scrollTo": "^1.4.13", // программная перемотка скрола к якорю
+
+	// модальные окна, галерея, карусель
+	"fancybox": "^1.3.4", // галерея и модальное окно
+	"comment3": "0", // "magnific-popup": "^1.1.0", // модальные окна, галерея (визуальные эффекты)
+	"owl-carousel": "^2.2.1", // карусель
+
+	// навигация
+	// WARNING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	// landing-nav конфликтует с superfish, что не мудрено !!!!!!!!!!!!!
+	"landing-nav": "^0.1", // navigation.js поддержка навигации лендинга
+	"jquery.mobilemenu": "^0.0.0", //сворачивание меню для мобильных
+	"superfish": "^1.7.9" // меню
+	"headhesive": "^1.2.4" // превращает меню в липкое
+
+	// визуальнае эффекты
+	"jquery.easing": "^1.3.1", // плавность анимации класса .animate
+	"jquery.stellar": "^0.6.2", // эффект parallax
+
+	// разное
+	"jquery-mousewheel": "^3.1.12", // поддержка колёсика мышки
+

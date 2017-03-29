@@ -1,0 +1,26 @@
+/* =======================================================
+*
+* Template Style
+* pagination.scss
+*
+* ======================================================= */
+
+@import "../../../../style/abstracts/mixins";
+@import "../../../../style/abstracts/variables";
+
+.if-pagination {
+	padding: 0 0 1rem 0;
+	text-align: center;
+	font-size: 1.6rem;
+	li {
+		display: inline-block;
+		padding: 0 0.9rem 0 0;
+	}
+	a {
+		color: $color-blue;
+		&:hover {
+			color: $color-dark_blue;
+			text-decoration: none;
+		}
+	};
+}

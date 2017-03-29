@@ -1,0 +1,29 @@
+/* =======================================================
+*
+* Template Style
+* awesome-buttons.scss
+*
+* ======================================================= */
+
+@import "../../../../style/abstracts/variables";
+
+.if-social {
+	font-size: 1.4rem;
+	text-align: left;
+	margin: -0.3rem 0 0 0;
+	padding: 0;
+	li {
+		list-style: none;
+		display: inline-block;
+		margin-left: 1rem;
+		&:first-child { margin-left: 0; }
+		a {
+			color: $color-white;
+			&:hover {
+				color: $color-light_blue;
+			}
+		}
+	}
+}
+
+

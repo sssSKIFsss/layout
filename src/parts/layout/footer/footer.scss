@@ -1,0 +1,24 @@
+/* =======================================================
+*
+* Template Style
+* footer.scss
+*
+* ======================================================= */
+
+@import "../../../style/abstracts/variables";
+
+.if-footer {
+	color: $color-white;
+	background-color: $color-blue;
+	padding: 6px 0;
+	font-size: 1.2rem;
+	a {
+		color: $color-white;
+		&:hover {
+			color: $color-light_blue;
+			text-decoration: none;
+		}
+	}
+}
+
+

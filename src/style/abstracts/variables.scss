@@ -1,0 +1,50 @@
+/* =======================================================
+*
+* Template Style
+* varialbes.scss
+*
+* ======================================================= */
+
+// FONTS
+$font-primary: 'OpenSansRegular', Arial, sans-serif;
+$font-secondary: 'Roboto', Arial, sans-serif;
+
+// COLORS
+// base-colors
+$color-white: #fff; // белый
+$color-black: #000; // чёрный
+//$brand-darker: #444;
+//$brand-gray: #ccc;
+//$brand-lighter: #e9e9e9;
+$color-beige: #f7eee0; // бежевый в фоне
+$color-dark_beige: #E0C99E; // тёмно-бежевый
+$color-light_blue: #D7DFEB ; // светло-синий
+$color-blue: #7f9cb9; // синий в фоне шапки
+$color-dark_blue: #567a9e; // тёмносиний в верху шапки
+// font colors
+$font-color-primary: #404040;
+// link colors
+$color-link: $color-blue;
+$color-visited-link: $color-dark-blue;
+$color-hover-link: $color-dark_beige;
+
+// transformation
+$border-radius:  4px !default;
+
+/*
+$brand-size: 30px;
+$brand-color: #c05;
+$grid-gutter-width: 40px !default;
+$padding-base-vertical: 14px !default;
+
+$input-border-focus-color:  $brand-primary !default;
+$form-group-margin-bottom:       30px !default;
+
+$primary-color: #52d3aa !default;
+$secondary-color: #3f95ea !default;
+$body-color: #818892;
+$selection-color: #f9f6f0;
+$overlay-color: #3b3d40;
+$bg-color: $brand-white;
+}
+*/
